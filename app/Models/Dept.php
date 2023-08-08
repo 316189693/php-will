@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 
 class Dept extends EloquentModel
@@ -12,5 +11,4 @@ class Dept extends EloquentModel
     protected $guarded = [];
 
     public $timestamps = false;
-
 }

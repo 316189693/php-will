@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Providers;
+
 use App\Jobs\Processor\AudioProccessor;
 use Illuminate\Support\ServiceProvider;
 
@@ -14,7 +15,6 @@ class ProcessorProvider extends ServiceProvider
         $this->app->singleton(AudioProccessor::class, function ($app) {
             return new AudioProccessor();
         });
-
     }
 
     /**
@@ -24,7 +24,8 @@ class ProcessorProvider extends ServiceProvider
     {
         //
     }
-    public function provides()
+
+    public function provides(): array
     {
         return [AudioProccessor::class];
     }
