@@ -17,7 +17,7 @@
    ```sh
     #!/bin/sh
 
-    ./vendor/bin/phpcs --standard=.phpcs.xml --encoding=utf-8 --extensions=php app/ config/ database/  routes/
+    ./vendor/bin/phpcs --standard=.phpcs.xml --report=full  --extensions=php app/ config/ database/  routes/
 
    # 如果 CodeSniffer 返回非零退出码（即检查不通过），阻止提交
    if [ $? -ne 0 ]; then
@@ -45,7 +45,7 @@
 ``` 
 
 
-2. 在项目根目录下面添加 ".phpcs.xml"文件
+1. 在项目根目录下面添加 ".phpcs.xml"文件
   ```
     <?xml version="1.0"?>
      <ruleset>
