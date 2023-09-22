@@ -83,8 +83,3 @@ CREATE TABLE `user` (
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
-INSERT INTO `migrations` VALUES (1,'2019_12_14_000001_create_personal_access_tokens_table',1);
-INSERT INTO `migrations` VALUES (2,'2023_06_26_092908_user',1);
-INSERT INTO `migrations` VALUES (3,'2023_06_26_094729_user',2);
-INSERT INTO `migrations` VALUES (4,'2023_06_28_080825_create_jobs_table',3);
-INSERT INTO `migrations` VALUES (5,'2023_06_28_082605_podcasr',4);
